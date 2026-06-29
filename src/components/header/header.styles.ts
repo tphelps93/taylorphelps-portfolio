@@ -30,7 +30,7 @@ export const headerStyles: Record<'header' | 'nav' | 'navLinks' | 'contactButton
         padding: '40px',
         color: 'white',
         height: '60px',
-        backgroundColor: '#333',
+        // backgroundColor: '#333',
         zIndex: 50,
         borderBottom: '1px solid tranparent',
     },
