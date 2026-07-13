@@ -1,0 +1,55 @@
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home-bg-pan {
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-hero__button {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.home-hero__button:hover {
+  transform: translateY(-2px);
+}
+
+.home-hero__panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero__panel {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-hero__button {
+    width: 100%;
+  }
+
+  .home-hero__content {
+    gap: 14px;
+  }
+}

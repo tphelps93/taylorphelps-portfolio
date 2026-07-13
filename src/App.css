@@ -1,4 +1,66 @@
 #app-container {
+    position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.app-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-color: var(--bg-color);
+    background-image: radial-gradient(circle at 10% 20%, rgba(217, 131, 36, 0.24) 0%, rgba(70, 130, 180, 0.16) 45%, transparent 70%);
+    background-size: 300% 300%;
+    animation: appPanGradient 30s linear infinite;
+}
+
+.app-stars {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    animation: appPanStars 36s linear infinite;
+}
+
+.app-star {
+    position: absolute;
+    border-radius: 999px;
+    background: var(--text-color);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--text-color) 20%, transparent), 0 0 10px color-mix(in srgb, var(--text-color) 35%, transparent);
+    animation: appTwinkle 3.2s ease-in-out infinite;
+}
+
+@keyframes appPanGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes appPanStars {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-4%, 4%, 0);
+    }
+}
+
+@keyframes appTwinkle {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.45;
+    }
+    50% {
+        transform: scale(1.6);
+        opacity: 1;
+    }
 }
