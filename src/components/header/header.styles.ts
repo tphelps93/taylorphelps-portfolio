@@ -24,7 +24,7 @@ export const StyledNavLink = styled(NavLink)`
     width: 100%;
     height: 1px;
     background-color: transparent;
-    transition: background-color 1s ease;
+    transition: background-color 0.2s ease;
   }
 
   &:hover {
@@ -100,7 +100,6 @@ export const headerStyles: Record<
     paddingRight: "50px",
     height: "60px",
     zIndex: 50,
-    borderBottom: "1px solid transparent",
     transition: "background-color 0.3s ease, border-bottom-color 0.2s ease",
     color: "var(--text-color)",
   },
@@ -110,9 +109,8 @@ export const headerStyles: Record<
   },
   titleLogo: {
     padding: "10px",
-    background: "#171738",
+    background: "#D98324",
     color: "#F5F1EAEB",
-    border: "2px solid var(--header-logo-outline-color)",
     borderRadius: "15px",
   },
   titleName: {

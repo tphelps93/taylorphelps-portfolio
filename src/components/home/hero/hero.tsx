@@ -1,5 +1,6 @@
 import { heroStyles } from "./hero.styles";
 import { Link } from "react-router-dom";
+import "./hero.css";
 
 export const Hero = () => {
   return (
@@ -35,47 +36,26 @@ export const Hero = () => {
               Contact
             </Link>
           </div>
+        </div>
 
-          <div style={heroStyles.statsRow}>
-            <div style={heroStyles.statsCard}>
+        <aside style={heroStyles.highlightCard} className="home-hero__panel">
+            <div style={{ ...heroStyles.statsCard, gridColumn: "span 4" }}>
               <strong>5+</strong>
               <span>years delivering and maintaining</span>
               <span>production systems</span>
             </div>
-            <div style={heroStyles.statsCard}>
+            <div style={{ ...heroStyles.statsCard, gridColumn: "span 2" }}>
               <strong>React • TypeScript</strong>
               <span>Frontend & UI engineering</span>
             </div>
-            <div style={heroStyles.statsCard}>
-              <strong>Azure • CI/CD</strong>
-              <span>Cloud & pipeline automation</span>
-            </div>
-            <div style={heroStyles.statsCard}>
+            <div style={{ ...heroStyles.statsCard, gridColumn: "span 2" }}>
               <strong>.NET • C#</strong>
               <span>Backend & server engineering</span>
             </div>
-          </div>
-        </div>
-
-        <aside style={heroStyles.highlightCard} className="home-hero__panel">
-          <p style={heroStyles.panelLabel}>Recent roles</p>
-          <ul style={heroStyles.list}>
-            <li>
-              Software Development Engineer II — CloudFit Software (Jan 2026 –
-              Present)
-            </li>
-            <li>
-              Software Development Engineer — CloudFit Software (Dec 2022 – Jan
-              2026)
-            </li>
-            <li>
-              Site Reliability Engineer — CloudFit Software (May 2021 – Dec
-              2022)
-            </li>
-          </ul>
-          <div style={heroStyles.panelFooter}>
-            <span>Based in Lynchburg, VA</span>
-          </div>
+            <div style={{ ...heroStyles.statsCard, gridColumn: "span 4" }}>
+              <strong>Azure • CI/CD</strong>
+              <span>Cloud & pipeline automation</span>
+            </div>
         </aside>
       </section>
     </div>

@@ -28,7 +28,6 @@ export const Header = () => {
     <div
       style={{
         ...headerStyles.headerRoot,
-        borderBottomColor: scrolled ? "#e1dacb" : "transparent",
         backgroundColor: scrolled ? "var(--header-bg-color)" : "transparent",
       }}
     >
