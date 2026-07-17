@@ -1,11 +1,11 @@
 import "./App.css";
-import { AboutMe } from "./components/about-me/about-me";
 import { Header } from "./components/header/header";
 import { Home } from "./components/home/home";
 import { Contact } from "./components/contact/contact";
 import { Projects } from "./components/projects/projects";
 import { Route, Routes } from "react-router-dom";
 import { stars, starTileOffsets } from "./components/common/data";
+import { Resume } from "./components/resume/resume";
 
 const App = () => {
   return (
@@ -43,9 +43,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </div>
   );

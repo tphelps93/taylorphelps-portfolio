@@ -38,9 +38,9 @@ const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const Skills = () => {
   return (
-    <div style={skillsStyles.skillsContainer} className="home-bg-pan">
+    <div style={skillsStyles.skillsContainer}>
       <div style={skillsStyles.inner}>
-        <p style={skillsStyles.eyebrow}>02 / Skills</p>
+        <p style={skillsStyles.eyebrow}>Skills</p>
         <h2 style={skillsStyles.heading}>What I work with</h2>
 
         <div style={skillsStyles.grid}>

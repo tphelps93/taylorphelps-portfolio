@@ -1,7 +1,7 @@
 import type { CSSProperties } from "styled-components";
 
-export const aboutStyles: Record<"aboutContainer", CSSProperties> = {
-  aboutContainer: {
+export const resumeStyles: Record<"resumeContainer", CSSProperties> = {
+  resumeContainer: {
     display: "flex",
     flexDirection: "column",
     backgroundColor: "var(--bg-color)",

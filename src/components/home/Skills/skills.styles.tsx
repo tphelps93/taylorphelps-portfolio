@@ -17,11 +17,11 @@ export const skillsStyles: Record<string, CSSProperties> = {
     margin: "0 auto",
   },
   eyebrow: {
-    fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
     fontSize: 20,
     letterSpacing: "0.08em",
     marginBottom: 8,
     textTransform: "uppercase",
+    color: "var(--active-color)"
   },
   heading: {
     fontSize: "clamp(28px, 4vw, 40px)",
@@ -40,8 +40,9 @@ export const skillsStyles: Record<string, CSSProperties> = {
     gap: 14,
   },
   categoryLabel: {
-    fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
-    fontSize: 15,
+    // fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
+    fontSize: 16,
+    color: "var(--active-color)"
   },
   tagRow: {
     display: "flex",
@@ -49,8 +50,8 @@ export const skillsStyles: Record<string, CSSProperties> = {
     gap: 8,
   },
   tag: {
-    fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
-    fontSize: 13,
+    // fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
+    fontSize: 16,
     padding: "6px 12px",
     borderRadius: 6,
     border: `1px solid ${ACCENT_BORDER}`,

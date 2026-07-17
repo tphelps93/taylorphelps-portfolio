@@ -45,6 +45,7 @@ export const Header = () => {
           <StyledNavLink to="/"> Home </StyledNavLink>
           <StyledNavLink to="/about"> About </StyledNavLink>
           <StyledNavLink to="/projects"> Projects </StyledNavLink>
+          <StyledNavLink to="/resume"> Resume </StyledNavLink>
         </div>
         <div style={headerStyles.headerRight}>
           <StyledThemeToggle onClick={toggleTheme}>
