@@ -8,8 +8,8 @@ import {
 } from "./header.styles";
 import { useTheme } from "../common/Theme/ThemeContext";
 import { Theme } from "../common/Theme/theme";
-import brightness from "../../assets/brightness.png";
-import crescent from "../../assets/crescent.png";
+import sun from "../../assets/sun.png";
+import crescentMoon from "../../assets/crescent-moon.png";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -49,9 +49,9 @@ export const Header = () => {
         <div style={headerStyles.headerRight}>
           <StyledThemeToggle onClick={toggleTheme}>
             {theme === Theme.Dark ? (
-              <img src={brightness} alt="Light mode" width={20} height={20} />
+              <img src={sun} alt="Light mode" width={20} height={20} />
             ) : (
-              <img src={crescent} alt="Dark mode" width={20} height={20} />
+              <img src={crescentMoon} alt="Dark mode" width={20} height={20} />
             )}
           </StyledThemeToggle>
           <StyledContactButton to="/contact"> Contact → </StyledContactButton>
