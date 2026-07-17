@@ -109,7 +109,7 @@ export const headerStyles: Record<
   },
   titleLogo: {
     padding: "10px",
-    background: "#D98324",
+    background: "rgba(70, 130, 180, 1)",
     color: "#F5F1EAEB",
     borderRadius: "15px",
   },

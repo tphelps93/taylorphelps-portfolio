@@ -12,16 +12,27 @@
     z-index: 0;
     pointer-events: none;
     background-color: var(--bg-color);
-    background-image: radial-gradient(circle at 10% 20%, rgba(217, 131, 36, 0.24) 0%, rgba(70, 130, 180, 0.16) 45%, transparent 70%);
-    background-size: 300% 300%;
-    animation: appPanGradient 30s linear infinite;
+    background-image:
+      radial-gradient(circle at 10% 20%, var(--bg-gradient-1)),
+      radial-gradient(circle at 80% 15%, var(--bg-gradient-2)),
+      radial-gradient(circle at 60% 65%, var(--bg-gradient-3));
+    background-size: 260% 260%;
+    animation: appPanGradient 200s linear infinite;
 }
 
 .app-stars {
     position: absolute;
     inset: 0;
     z-index: 0;
-    animation: appPanStars 36s linear infinite;
+    width: 200%;
+    height: 200%;
+    animation: appPanStars 140s linear infinite;
+}
+
+.app-stars-tile {
+    position: absolute;
+    width: 50%;
+    height: 50%;
 }
 
 .app-star {
@@ -49,7 +60,7 @@
         transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translate3d(-4%, 4%, 0);
+        transform: translate3d(-50%, -50%, 0);
     }
 }
 

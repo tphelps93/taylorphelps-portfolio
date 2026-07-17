@@ -29,6 +29,7 @@ export const Header = () => {
       style={{
         ...headerStyles.headerRoot,
         backgroundColor: scrolled ? "var(--header-bg-color)" : "transparent",
+        backdropFilter: scrolled ? "blur(8px)" : undefined, 
       }}
     >
       <nav style={headerStyles.nav}>

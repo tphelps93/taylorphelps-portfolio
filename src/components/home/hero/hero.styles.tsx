@@ -53,7 +53,6 @@ export const heroStyles: Record<
     alignItems: "center",
     justifyContent: "center",
     padding: "12px 18px",
-    backgroundColor: "var(--active-color)",
     color: "#fff",
     textDecoration: "none",
     fontWeight: "600",
@@ -90,6 +89,6 @@ export const heroStyles: Record<
     background: "var(--header-bg-color)",
     border: "1px solid rgba(255,255,255,0.16)",
     boxShadow: "0 18px 45px rgba(4, 15, 15, 0.12)",
-    color: "#F5F1EAEB"
+    color: "var(--text-color)"
   }
 };
